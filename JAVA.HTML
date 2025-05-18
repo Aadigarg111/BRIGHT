@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA Videos - Study Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio for videos */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000; /* Black background for the video container */
+            border-radius: 0.5rem; /* Tailwind's rounded-lg */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Tailwind's shadow-lg */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-red-600">StudyHub</a>
+            <a href="index.html" class="text-red-600 hover:text-red-800 font-medium">← Back to Subjects</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-red-700">JAVA Programming</h1>
+            <p class="text-lg text-gray-600 mt-2">Your video resources for learning JAVA, unit by unit.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="video-card bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">JAVA UNIT 1</h3>
+                <div class="video-container">
+                    <iframe src="https://youtu.be/OZph-V6IfrI?si=ngwzxzTnyRaW5_xZ" title="YouTube video player - JAVA UNIT 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Official video for JAVA Unit 1, covering core concepts.</p>
+            </div>
+
+            <div class="video-card bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">JAVA UNIT 2</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=fVBcsd_Qu6w" title="YouTube video player - JAVA UNIT 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Explore topics from JAVA Unit 2 in this comprehensive video.</p>
+            </div>
+
+            <div class="video-card bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">JAVA UNIT 3</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=N1spNzS9qd4" title="YouTube video player - JAVA UNIT 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Detailed explanations and examples for JAVA Unit 3.</p>
+            </div>
+
+            <div class="video-card bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">JAVA UNIT 4</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=wpBxQl8MsW0" title="YouTube video player - JAVA UNIT 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Master advanced concepts from JAVA Unit 4 with this video guide.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 StudyHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
